@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 <p>Publicidad RRSS</p>
                                 <p>500€</p>
                             </div>
-                            <div class="mt-5 d-flex justify-content-between">
+                            <div class="mt-5 d-flex justify-content-between border-top border-2 pt-2">
                                 <p class="fw-bold">TOTAL</p>
                                 <p class="fw-bold">3000€</p>
                             </div>
@@ -81,6 +81,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const progressBar = document.getElementById("progressBarDanger");
+    const targetWidth = 10; // Cambia este valor al porcentaje deseado
+    progressBar.style.width = targetWidth + "%";
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const progressBar = document.getElementById("progressBarSuccess");
+    const targetWidth = 80; // Cambia este valor al porcentaje deseado
+    progressBar.style.width = targetWidth + "%";
+});
 // Llamar inmediatamente para inicializar
 updateDateTime();
 updateElapsedTime();

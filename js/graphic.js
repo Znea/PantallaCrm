@@ -8,13 +8,39 @@ function cargarGrafico() {
     google.charts.setOnLoadCallback(drawChart);
 }
 
+function animateChart(chart, data, options, startValue, endValue) {
+    let currentValue = startValue;
+    const step = 1; // Incremento del porcentaje en cada frame
+    const interval = 30; // Duración de cada frame en milisegundos
+
+    const intervalId = setInterval(() => {
+        // Incrementa el valor actual
+        currentValue += step;
+
+        // Actualiza los datos del gráfico
+        const animatedData = google.visualization.arrayToDataTable([
+            ['Grafico', ''],
+            ['Satisfecho', currentValue],
+            ['No satisfecho', 100 - currentValue]
+        ]);
+
+        // Dibuja el gráfico con los valores actualizados
+        chart.draw(animatedData, options);
+
+        // Detiene la animación al alcanzar el valor final
+        if (currentValue >= endValue) {
+            clearInterval(intervalId);
+        }
+    }, interval);
+}
+
 // Dibujo el gráfico y coloco los valores
 function drawChart() {
    
     var data = google.visualization.arrayToDataTable(
         [['Grafico', ''],
-        ['Satisfecho', 60],
-        ['No satisfecho', 40],
+        ['Satisfecho', 0],
+        ['No satisfecho', 100],
         ]
     );    
 
@@ -25,7 +51,7 @@ function drawChart() {
         pieSliceText: 'value',      // Muestra los valores en las rebanadas
         pieSliceTextStyle: {
             color: '#F8F9F9',       // Color del texto de las rebanadas
-            fontSize: 12           // Tamaño del texto
+            fontSize: 18           // Tamaño del texto
         },
         slices: {
             0: { color: '#FF5733', offset:0.01}, // Color de la primera rebanada
@@ -37,7 +63,7 @@ function drawChart() {
             left: 30,              // Margen izquierdo
             top: 15,               // Margen superior
             width: '90%',          // Ancho del área del gráfico
-            height: '75%'          // Alto del área del gráfico
+            height: '82%'          // Alto del área del gráfico
         },
         tooltip: {
             trigger: 'none' // Desactiva el tooltip en hover
@@ -45,7 +71,7 @@ function drawChart() {
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-    chart.draw(data, options);
+    animateChart(chart, data, options, 0, 60);  // Inicia la animación del gráfico desde 0% hasta 100%
 }
 
 cargarGrafico();

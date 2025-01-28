@@ -15,7 +15,7 @@
             <div class="container-fluid d-flex justify-content-center">
               <a class="navbar-brand d-flex align-items-center">
                 <img src="img/logo.png" alt="Logo" style="width:70px;" class="rounded-pill"> 
-                <p class="font-bold">KALEIDO</p>
+                <p class="fw-bold fs-2">KALEIDO</p>
               </a>
             </div>
           </nav>
@@ -44,113 +44,129 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="card bg-light">
-                    <div class="row">
-                        <div class="col">
-                            <p>Nombre: Pepe</p>
-                        </div>
-                        <div class="col">
-                            <p>Empresa: Canela Visual</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <p>Puesto: Diseñador</p>
-                        </div>
-                        <div class="col">
-                            <p>Sector: Artes Gráficas</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <p>Provincia: Granada</p>
-                        </div>
-                        <div class="col">
-                            <p>Antigüedad: 8 años </p>
-                        </div>
+                    <div class="row mt-3 pt-3 border-top border-2 border-gray">
+                        <div class="d-flex align-items-center">
+                            <p class="m-0 w-50">Pasar a: </p>
+                            <select class="form-select-sm rounded ms-2 w-100">
+                                <option value="">DPTO Marketing</option>
+                                <option value="">DPTO Informática</option>
+                                <option value="">DPTO RRHH</option>
+                            </select>
+                       </div>
+                       <div class="d-grid">
+                            <button class="btn btn-success mt-4 btn-block">Colgar y Pasar</button>
+                       </div>
                     </div>
                 </div>
                 <div class="card bg-light">
-                   <p class="text-center">Productos más vendidos</p>
-                    <div class="container d-flex flex-row justify-content-between">
-                        <div>
-                            <img src="img/pegatinas.JPG" class="same-size" alt="Pegatinas">
+                    <p class="text-center fw-bold fs-5">INFORMACIÓN</p>
+                    <div class="row">
+                        <div class="col">
+                            <p class="text-center"><strong>Nombre:</strong> Pepe</p>
                         </div>
-                        <div>
-                            <img src="img/folleto.JPG" class="same-size" alt="Folleto">
+                        <div class="col">
+                            <p class="text-center"><strong>Empresa:</strong> Canela Visual</p>
                         </div>
-                        <div>
-                            <img src="img/chapas.JPG" class="same-size" alt="Chapas">
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">
+                            <p><strong>Puesto:</strong> Diseñador</p>
+                        </div>
+                        <div class="col text-center">
+                            <p><strong>Sector:</strong> Artes Gráficas</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">
+                            <p><strong>Provincia:</strong> Granada</p>
+                        </div>
+                        <div class="col text-center">
+                            <p><strong>Antigüedad:</strong> 8 años </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 card bg-light">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="m-0">Riesgo</p>
+                        <div class="progress">
+                            <div class="progress-bar danger" id="progressBarDanger" style="width:0%"></div>
+                        </div>
+                    </div>
+                    <div class="mt-3 d-flex justify-content-between align-items-center">
+                        <p class="m-0">Fidelidad</p>
+                        <div class="progress">
+                            <div class="progress-bar success" id="progressBarSuccess" style="width:0%"></div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="container mx-2">        
                 <div class="card bg-light">
-                    <p class="text-center">Satisfacción</p>
+                    <p class="text-center fw-bold fs-5">SATISFACCIÓN</p>
                     <div class="right">
                         <div id="piechart"></div>
                     </div>
                 </div>
                 <div class="card bg-light">
-                    <p class="text-center">Pedidos</p>
+                    <p class="text-center fw-bold fs-5">PEDIDOS</p>
                     <div>
                         <div class="d-flex justify-content-between border-bottom border-1">
                             <p>Papel Adhesivo</p>
-                            <p class="text-success">Entregado</p>
+                            <p class="text-success fw-bold">Entregado</p>
                         </div>
                         <div class="d-flex justify-content-between border-bottom border-1 mt-2">
                             <p>Folletos</p>
-                            <p class="text-danger">En Curso</p>
+                            <p class="text-danger fw-bold">En Curso</p>
                         </div>
                         <div class="d-flex justify-content-between mt-2">
                             <p>Chapas</p>
-                            <p class="text-success">Entregado</p>
+                            <p class="text-success fw-bold">Entregado</p>
                         </div>
                     </div>
                 </div>
                 <div class="card bg-light">
-                   <div class="d-flex align-items-center">
-                        <p class="m-0 w-50">Motivo de contacto</p>
-                        <select class="form-select-sm rounded ms-2 w-100">
-                            <option value="">Retraso Pedido</option>
-                            <option value="">Fallos en la factura</option>
-                            <option value="">Defecto Productos</option>
-                        </select>
-                   </div>
-                   <textarea class="mt-3 border-gray rounded" placeholder="Descripción..." style="resize: none; height: 150px;"></textarea>
-                </div>
+                    <p class="text-center fs-5 fw-bold">PRODUCTOS MÁS VENDIDOS</p>
+                     <div class="container d-flex flex-row justify-content-between">
+                         <div class="cont">
+                             <img src="img/pegatinas.JPG" class="same-size" alt="Pegatinas">
+                         </div>
+                         <div class="cont">
+                             <img src="img/folleto.JPG" class="same-size" alt="Folleto">
+                         </div>
+                         <div class="cont">
+                             <img src="img/chapas.JPG" class="same-size" alt="Chapas">
+                         </div>
+                     </div>
+                 </div>
             </div>
             <div class="container ms-2">    
                 <div class="container-fluid">
-                    <div class="row">
+                    <div class="row ">
                         <div id="inc" class="col">
-                            <p class="text-white m-2">INCIDENCIAS</p>
+                            <p class="text-white fw-bold m-2">INCIDENCIAS</p>
                         </div>
                         <div id="ventas" class="col">
-                            <p class="text-white m-2">VENTAS</p>
+                            <p class="text-white fw-bold m-2">VENTAS</p>
                         </div>
                         <div id="tar" class="col">
-                            <p class="text-white m-2">TARIFAS</p>
+                            <p class="text-white fw-bold m-2">TARIFAS</p>
                         </div>
                     </div>
-                    <div id="res" class="row">
+                    <div id="res" class="row pt-2">
                     </div>
                 </div>
                 <div class=" mt-4 card bg-light">
                     <div class="d-flex align-items-center">
-                        <p class="m-0 w-50">Pasar a: </p>
-                        <select class="form-select-sm rounded ms-2 w-100">
-                            <option value="">DPTO Marketing</option>
-                            <option value="">DPTO Informática</option>
-                            <option value="">DPTO RRHH</option>
-                        </select>
-                   </div>
-                   <div class="d-grid">
-                        <button class="btn btn-success mt-4 btn-block">Colgar y Pasar</button>
-                   </div>
-                </div>
+                         <p class="m-0 w-50">Motivo de contacto</p>
+                         <select class="form-select-sm rounded ms-2 w-100">
+                             <option value="">Retraso Pedido</option>
+                             <option value="">Fallos en la factura</option>
+                             <option value="">Defecto Productos</option>
+                             <option value="">Solicitud Información</option>
+                         </select>
+                    </div>
+                    <textarea class="mt-3 border-gray rounded" placeholder="Descripción..." style="resize: none; height: 150px;"></textarea>
+                 </div>
             </div>
         </div>
     </article>
