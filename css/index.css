@@ -1,0 +1,83 @@
+body{
+    margin:0;
+}
+
+header{
+    box-shadow: 0 0 10px 4px rgb(111, 15, 66);
+}
+
+hr{
+    background-color: white;
+    height: 5px !important;
+    opacity: 1;
+}
+
+#inc, #ventas, #tar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#inc:hover, #ventas:hover, #tar:hover {
+    background-color: #000000c3; 
+    cursor: pointer; /* Cambia el cursor a un puntero */
+    transition: background-color 0.3s ease; /* Efecto de transición para el color */
+}
+
+/* Ajustar el borde del div res */
+#res {
+    border: 1px solid #00000056; /* Borde negro */
+    height: 200px; /* Altura fija para el div res */
+    margin-top: -2px; /* Quitar espacio entre el menú y el borde */
+}
+
+.p-head{
+    font-weight: bold; 
+    color: white;    
+    font-size: 20px;
+    padding: 10px 0 10px 5px;
+}
+
+.p-head2{ 
+    color: white;    
+    font-size: 20px;
+    padding: 10px 0 10px 5px;
+}
+
+.container{
+    padding: 0 !important;
+}
+
+.bg-red{
+    background-color: rgb(192, 44, 44);
+}
+
+.bg-red:hover{
+    background-color: rgb(145, 34, 34);
+}
+
+.card{
+    box-shadow: 0 5px 5px 2px rgba(111, 15, 66, 0.518);
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.id{
+    height: 20px;
+}
+
+.id>p{
+    font-weight: bold;
+}
+
+.same-size{
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+}
+
+.selected{
+    background-color: rgba(255, 0, 0, 0.5) !important;
+}
+
