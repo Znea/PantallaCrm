@@ -1,8 +1,12 @@
 // Función para actualizar la fecha y hora actual
 function updateDateTime() {
     const now = new Date();
+    const day = String(now.getDate()).padStart(2, '0'); // Día con 2 dígitos
+    const month = String(now.getMonth() + 1).padStart(2, '0'); // Mes con 2 dígitos
+    const year = now.getFullYear();
+
+    const date = `${day}/${month}/${year}`; // Formato dd/mm/yyyy
     const time = now.toLocaleTimeString();
-    const date = now.toLocaleDateString();
 
     document.getElementById('current-date').textContent = date;
 }
@@ -33,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     inc.addEventListener('click', function () {
         res.innerHTML = `<div class='d-flex align-items-center justify-content-center'>
-                            <p class='text-danger fw-bold'>NO HAY INCIDENDIAS</p>
+                            <p class='text-orange fw-bold fs-3'>NO HAY INCIDENDIAS</p>
                         </div>`;
         inc.classList.add('selected');
         ventas.classList.remove('selected');

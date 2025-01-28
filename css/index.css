@@ -84,6 +84,10 @@ hr{
     cursor: pointer;
 }
 
+.cont:hover{
+    box-shadow: 0 5px 15px 5px rgba(255, 68, 0, 0.279);
+}
+
 .cont{
     overflow: hidden;
 }
@@ -115,3 +119,8 @@ hr{
 .success{
     background-color: #008f00;
 }
+
+.text-orange{
+    color: orangered;
+}
+
