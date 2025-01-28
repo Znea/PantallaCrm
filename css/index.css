@@ -28,7 +28,7 @@ hr{
 /* Ajustar el borde del div res */
 #res {
     border: 1px solid #00000056; /* Borde negro */
-    height: 225px; /* Altura fija para el div res */
+    height: 255px; /* Altura fija para el div res */
     margin-top: -2px; /* Quitar espacio entre el menú y el borde */
 }
 
@@ -122,5 +122,10 @@ hr{
 
 .text-orange{
     color: orangered;
+}
+
+.tit{
+    color: white !important;
+    text-shadow: 0 0 5px rgba(255, 68, 0, 0.815), 0 0 10px rgba(255, 68, 0, 0.815), 0 0 20px rgba(255, 68, 0, 0.815);
 }
 

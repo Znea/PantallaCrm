@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
         ventas.classList.add('selected');
         inc.classList.remove('selected');
         tar.classList.remove('selected');
-        res.innerHTML = ` <div>
+        res.innerHTML = ` <div class="d-flex flex-column" style="height: 100%;">
                             <div class="d-flex justify-content-between">
                                 <p>Creación Página web</p>
                                 <p>1000€</p>
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 <p>Publicidad RRSS</p>
                                 <p>500€</p>
                             </div>
-                            <div class="mt-5 d-flex justify-content-between border-top border-2 pt-2">
+                            <div class="mt-auto d-flex justify-content-between border-top border-2 pt-2">
                                 <p class="fw-bold">TOTAL</p>
                                 <p class="fw-bold">3000€</p>
                             </div>

@@ -63,7 +63,7 @@ function drawChart() {
             left: 30,              // Margen izquierdo
             top: 15,               // Margen superior
             width: '90%',          // Ancho del área del gráfico
-            height: '82%'          // Alto del área del gráfico
+            height: '90%'          // Alto del área del gráfico
         },
         tooltip: {
             trigger: 'none' // Desactiva el tooltip en hover

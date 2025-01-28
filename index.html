@@ -14,8 +14,8 @@
         <nav class="navbar bg-light p-0 navbar-light">
             <div class="container-fluid d-flex justify-content-center">
               <a class="navbar-brand d-flex align-items-center">
-                <img src="img/logo.png" alt="Logo" style="width:70px;" class="rounded-pill"> 
-                <p class="fw-bold fs-2">KALEIDO</p>
+                <p class="fw-bold fs-1 tit">K A L E I D O</p>
+                <p class="fw-bold fs-1 tit ms-5">D E S I G N</p>
               </a>
             </div>
           </nav>
@@ -46,7 +46,7 @@
                     </div>
                     <div class="row mt-3 pt-3 border-top border-2 border-gray">
                         <div>
-                            <select class="form-select-sm rounded w-100">
+                            <select class="form-select rounded w-100">
                                 <option value="">DPTO Marketing</option>
                                 <option value="">DPTO Informática</option>
                                 <option value="">DPTO RRHH</option>
@@ -59,7 +59,7 @@
                 </div>
                 <div class="card bg-light">
                     <p class="text-center fw-bold fs-5">INFORMACIÓN</p>
-                    <div class="container" style="width: 60%;">
+                    <div class="container mb-2" style="width: 60%;">
                         <p><strong>Nombre:</strong> Pepe Morgado Rodríguez</p>
                         <p><strong>Puesto:</strong> Diseñador</p>
                         <p><strong>Provincia:</strong> Granada</p>
@@ -67,10 +67,24 @@
                         <p><strong>Sector:</strong> Artes Gráficas</p>
                         <p><strong>Antigüedad:</strong> 8 años </p>
                     </div>
+                    <div class="container-fluid border-top border-1 pt-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="m-0 fw-bold">Riesgo</p>
+                            <div class="progress">
+                                <div class="progress-bar danger" id="progressBarDanger" style="width:0%"></div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center" style="margin-top: 25px;">
+                            <p class="m-0 fw-bold">Fidelidad</p>
+                            <div class="progress">
+                                <div class="progress-bar success" id="progressBarSuccess" style="width:0%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="container mx-2">        
-                <div class="card bg-light">
+                <div class="card bg-light" style="height: 292px;">
                     <p class="text-center fw-bold fs-5">SATISFACCIÓN</p>
                     <div class="right">
                         <div id="piechart"></div>
@@ -108,21 +122,7 @@
                      </div>
                  </div>
             </div>
-            <div class="container ms-2">    
-                <div class="card bg-light">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <p class="m-0">Riesgo</p>
-                        <div class="progress">
-                            <div class="progress-bar danger" id="progressBarDanger" style="width:0%"></div>
-                        </div>
-                    </div>
-                    <div class="mt-3 d-flex justify-content-between align-items-center">
-                        <p class="m-0">Fidelidad</p>
-                        <div class="progress">
-                            <div class="progress-bar success" id="progressBarSuccess" style="width:0%"></div>
-                        </div>
-                    </div>
-                </div>
+            <div class="container ms-2">                
                 <div class="container-fluid">
                     <div class="row ">
                         <div id="inc" class="col">
@@ -138,17 +138,17 @@
                     <div id="res" class="row pt-2">
                     </div>
                 </div>
-                <div class=" mt-4 card bg-light">
+                <div class="card bg-light" style="margin-top: 15px;">
                     <p class="mb-2 text-center fs-5 fw-bold">Motivo de contacto</p>
                     <div>
-                         <select class="form-select-sm rounded w-100">
+                         <select class="form-select rounded w-100">
                              <option value="">Retraso Pedido</option>
                              <option value="">Fallos en la factura</option>
                              <option value="">Defecto Productos</option>
                              <option value="">Solicitud Información</option>
                          </select>
                     </div>
-                    <textarea class="mt-3 border-gray rounded" placeholder="Descripción..." style="resize: none; height: 150px;"></textarea>
+                    <textarea class="mt-3 border-gray rounded" placeholder="Descripción..." style="resize: none; height: 299px;"></textarea>
                  </div>
             </div>
         </div>
